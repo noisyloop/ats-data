@@ -1,0 +1,177 @@
+[
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "How does an ATS actually parse a resume?"},
+      {"role": "assistant", "content": "An ATS does not read a resume the way a human does. When a resume is uploaded, the system runs Optical Character Recognition (OCR) and Natural Language Processing (NLP) to extract text and sort it into structured fields such as name, contact info, work history, education, and skills. Parsers generally read left-to-right and top-to-bottom, so complex columns, tables, graphics, or unusual fonts can scramble the extraction and produce a garbled, effectively unrankable record, regardless of the applicant's actual qualifications."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What's the difference between TF-IDF and semantic matching in ATS systems?"},
+      {"role": "assistant", "content": "TF-IDF (Term Frequency-Inverse Document Frequency) is used by older ATS systems and counts how often a keyword appears in a resume relative to how common that word is across all resumes; repeating a keyword excessively can actually lower its weight because the system interprets it as keyword-stuffing. Semantic search, used by modern systems, maps both the resume and job description into a shared vector embedding space, so a resume saying 'Enterprise Account Executive' can get credit for a posting asking for 'B2B Sales' even without an exact keyword match."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Is it true that 75% of resumes are rejected by ATS software before a human ever sees them?"},
+      {"role": "assistant", "content": "This is a widely circulated but poorly sourced claim. It traces back to a single 2012 sales pitch from a company called Preptel, which went out of business in 2013, with no published methodology ever produced. Better-sourced data tells a different story: a 2025 Enhancv study of 25 US recruiters found only 8% configure any content-based auto-rejection at all, and Harvard Business School's 'Hidden Workers' study found screening issues stem mostly from how filters are configured by people, not autonomous software deletion. That said, the competing claim that 90-95% of applications are reviewed by a human is also just one practitioner's unverified estimate, and it contradicts data showing recruiters often stop reviewing after 300-500 strong applications even on listings that stay open. The most accurate picture: very few applications are explicitly auto-rejected, but a large, unmeasured share simply sit unopened once a recruiter has filled their interview slate, due to volume rather than any individual rejection decision."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What data does an ATS collect beyond my resume?"},
+      {"role": "assistant", "content": "Far more than the resume itself. ATS platforms typically collect: parsed resume fields, the application form (often duplicating resume data plus custom screening questions), cover letter text, assessment or test scores, source tracking data (which job board or referral brought the applicant), behavioral metadata such as time spent on the form, IP address and device fingerprint, video interview recordings and transcripts where used, and a separate voluntary EEO self-identification survey covering race, gender, disability, and veteran status."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What is Mobley v. Workday and what is its current status?"},
+      {"role": "assistant", "content": "Mobley v. Workday (N.D. Cal., 3:23-cv-00770) is a case in which Derek Mobley alleges Workday's AI-powered screening tools contributed to his rejection from over 100 jobs on the basis of race, age, and disability, suing Workday directly rather than individual employers. In March 2026 a federal judge allowed age discrimination claims under the ADEA to proceed. In June 2026, Judge Rita Lin ruled Workday must also face California state law and Americans with Disabilities Act claims, rejecting Workday's argument that California law shouldn't apply to out-of-state applicants. The case is proceeding as a certified nationwide collective on the age claims, with discovery requiring Workday to produce EEO-1 and OFCCP compliance records. Workday's public position is that its technology looks only at job qualifications, not protected traits, and does not itself make hiring decisions."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What did the Bertrand and Mullainathan resume study find?"},
+      {"role": "assistant", "content": "The 2004 study 'Are Emily and Greg More Employable Than Lakisha and Jamal?' sent thousands of otherwise-identical resumes to job ads in Boston and Chicago, varying only the applicant's name to signal race. Resumes with white-sounding names (Emily, Greg) received roughly 50% more callbacks than identical resumes with Black-sounding names (Lakisha, Jamal). On average, applicants with Black-sounding names needed about 8 additional years of experience to match the callback rate of white-named applicants, and the gap widened as resume quality improved. This was conducted entirely with human reviewers, predating AI hiring tools by two decades, and notably excluded Hispanic and Asian names from its design."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "How can an AI hiring system discriminate by race if it never sees a race field?"},
+      {"role": "assistant", "content": "Through proxy variables: data fields that correlate with race without explicitly stating it. Zip codes can correlate with race and socioeconomic status due to historical housing segregation. University names can correlate with income, generational wealth, and race via institutions like HBCUs. Employment gaps can function as proxies for caregiving responsibilities or disability, which themselves correlate with demographic patterns. A model trained on a company's historical hiring data inherits whatever demographic skew that history contains, learning to favor whatever pattern past successful hires shared, even without race ever being a direct input."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What did the 2024 University of Washington study find about AI resume screening?"},
+      {"role": "assistant", "content": "Wilson and Caliskan's 2024 study, presented at the AAAI/ACM AIES conference, tested three high-performing text-embedding models against 554 real resumes and 571 job descriptions across nine occupations. They found white-male-associated names were favored 85% of the time, female-associated names only 11% of the time, and in direct pairwise comparisons Black-male-associated names were favored 0% of the time against white-male names and only 14.8% of the time against Black-female names. Bias compounded most severely at the intersection of race and gender, with Black men disadvantaged most of any group tested."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Does having a human review AI hiring recommendations prevent bias?"},
+      {"role": "assistant", "content": "Evidence suggests it's weaker protection than commonly assumed. A November 2025 University of Washington follow-up study found that when human participants were shown AI hiring recommendations calibrated to match real-world AI bias rates, the humans' own candidate selections shifted to mirror that bias, even though the humans retained final decision-making authority. This undercuts the common defense that human-in-the-loop review neutralizes algorithmic bias, since biased recommendations appear to recalibrate what a human reviewer perceives as a reasonable choice rather than simply being overridden."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What happened with Amazon's recruiting AI in 2018?"},
+      {"role": "assistant", "content": "Amazon built and then scrapped an internal recruiting tool after discovering it had taught itself to penalize resumes containing the word 'women's' (as in 'women's chess club captain' or 'women's college'), because it was trained on a decade of resumes submitted to Amazon that skewed male in technical roles. This is one of the clearest documented cases of a company catching and killing a biased hiring algorithm before wide deployment, and it predates the current wave of LLM-based screening tools, showing this is a structural risk of training on historical hiring data generally."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Is there documented bias against Hispanic and Latino applicants in AI hiring?"},
+      {"role": "assistant", "content": "Yes, though the evidence is more mixed than for Black applicants. A 2024 study testing real LLMs (Mistral-7b, Llama2 variants, and GPT-3.5) found acceptance rates were uniformly lowest for Hispanic male names of any group tested, including lower than Black applicants. However, a broader global meta-analysis of decades of human-reviewer correspondence-audit studies (Lippens, Vermeiren & Baert, 2023) found the Hispanic penalty was comparatively smaller, around 8% fewer positive responses, versus 41% for Arab applicants in that same body of literature. These findings likely reflect different things being measured: a recent US-focused snapshot of LLM behavior versus a multi-decade, multi-country aggregate of human-reviewer behavior, rather than a direct contradiction."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Why do job applications ask if I'm Hispanic or Latino separately from race?"},
+      {"role": "assistant", "content": "Under the Office of Management and Budget's Statistical Policy Directive No. 15, first issued in 1977, 'Hispanic or Latino' is classified as an ethnicity, not a race. This produces a two-step question structure: first an ethnicity question (Hispanic or Latino, yes or no), then a completely separate race question where Hispanic or Latino is not an available option. A person can be Hispanic and select White, Black, Asian, or any other race category independently. OMB revised this in March 2024 to merge ethnicity and race into one combined question, but federal agencies including the EEOC have repeatedly pushed back compliance deadlines, now extended to 2027 for an implementation plan and 2029 for full form compliance, so most applicants still encounter the older two-question format."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Are race and disability questions on job applications legally required, and do they affect my chances?"},
+      {"role": "assistant", "content": "Private employers with 100 or more employees, and federal contractors with 50 or more employees and a contract of at least $50,000, are required by EEOC and OFCCP regulations to invite applicants to voluntarily self-identify race, ethnicity, gender, disability status, and veteran status. Completion is voluntary and declining has no legal effect on the application. The data is supposed to be processed and stored separately from the rest of the application and is not meant to be visible to whoever makes the hiring decision; it's used only for EEO-1 reporting and affirmative action compliance purposes. The practical caveat is that this data is collected through the same ATS infrastructure as everything else, even though it's procedurally meant to be separated from it."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "How common is AI use in hiring as of 2026?"},
+      {"role": "assistant", "content": "Very common. Estimates put AI usage in hiring at approximately 98.4% of Fortune 500 companies, with adoption among companies overall projected to grow from roughly 51% to 68% by the end of 2025, and over 80% of all US employers reporting use of some AI hiring tool. This makes AI-mediated screening close to the default condition for applying to a large employer in 2026, rather than an edge case."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What is NYC Local Law 144?"},
+      {"role": "assistant", "content": "NYC Local Law 144 requires employers using 'Automated Employment Decision Tools' to commission independent annual bias audits and publish the results. Responsibility for compliance sits with the employer, not just the software vendor, meaning a company can't simply point to its ATS vendor's claims of fairness as a defense."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "How does the EU AI Act regulate hiring AI?"},
+      {"role": "assistant", "content": "The EU AI Act classifies hiring AI as 'high-risk,' which triggers required transparency obligations, risk-management processes, and mandatory human oversight, with a compliance deadline of August 2026. This is part of a broader regulatory trend, with US states like Colorado, Illinois, and California rolling out or considering comparable requirements, though a December 2025 federal executive order in the US seeks to preempt state-level AI regulation, creating uncertainty about how that patchwork will settle."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What is synthetic identity fraud in the context of remote hiring?"},
+      {"role": "assistant", "content": "It refers to fraudsters, notably North Korean state-sponsored operatives, using AI deepfakes and stolen or fabricated identities to obtain remote jobs at Western companies, then routing salaries back to the regime or stealing data. The US Department of Justice raided 29 'laptop farm' operations across 16 states in mid-2025, and the FBI has documented over 300 US companies that unknowingly hired DPRK operatives. In one case, Christina Chapman was sentenced to 8.5 years in prison for hosting a laptop farm that funneled over $17 million to North Korea across 309 unwitting employers. This is the underlying reason ID and biometric verification in hiring has intensified industry-wide; it's a response to documented large-scale fraud, not arbitrary caution."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "How quickly can someone create a convincing deepfake for a job interview?"},
+      {"role": "assistant", "content": "Security researchers at Palo Alto Networks' Unit 42 demonstrated that a real-time video deepfake usable in a live interview can be built in roughly 70 minutes by someone with no prior image-manipulation experience, using cheap consumer hardware. Gartner projects that by 2028, as many as 1 in 4 candidate profiles globally will be synthetic, reflecting how accessible this technology has become."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What is a 'ghost job' posting?"},
+      {"role": "assistant", "content": "A ghost job is a job posting that's kept open or live intentionally beyond any real, immediate hiring intent, sometimes used to project company growth or to keep a standing pipeline of resumes available in case of attrition. An applicant responding to such a posting may be applying for a role that isn't actively being filled at all."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Do companies actually use blind or redacted resume review to reduce bias?"},
+      {"role": "assistant", "content": "Some ATS platforms include a feature to automatically redact name, photo, address, and university from a resume before a recruiter sees it, specifically to reduce proxy-variable bias. However, this must be actively enabled by the employer, and most companies do not turn it on, meaning the technical capacity to reduce a documented source of bias often exists but goes unused."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What are ATS 'knockout questions'?"},
+      {"role": "assistant", "content": "Knockout questions are binary eligibility checks set by a human recruiter, not the algorithm, such as work authorization status, possession of an active required license, or a minimum years-of-experience threshold. Failing a knockout question typically filters an applicant out regardless of their overall match score. These are described in the industry as 'legally defensible' rejections because they apply uniformly to every applicant, as opposed to a subjective content-based judgment."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Does disability status cause algorithmic penalties in ATS scoring?"},
+      {"role": "assistant", "content": "Yes, through several mechanisms. Resume gaps, which are common among people with chronic illness or disability histories, are frequently penalized by ranking algorithms that assume a lack of recent relevant experience. Non-standard resume formats, sometimes used by applicants with cognitive disabilities or dyslexia, can be mangled or rejected by parsers regardless of qualification. Gamified assessments used by some platforms, such as neurological games or video-response analysis, have been criticized for penalizing neurodivergent candidates and for video-analysis AI failing to accurately read facial expressions across different disabilities."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What age-related bias exists in ATS systems?"},
+      {"role": "assistant", "content": "Algorithms can screen out candidates with 'too much' experience, sometimes as an implicit proxy for higher expected salary. Mentioning older technologies by name, such as legacy mainframe systems, can function as an inadvertent age signal. Filters configured for 'early career' candidates based on graduation year can also automatically exclude older applicants regardless of actual fit for the role."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "What happens to my resume if I'm not selected for a job?"},
+      {"role": "assistant", "content": "It's typically added to the company's general talent network database, which exists primarily to send marketing or newsletter-style emails rather than as a pool recruiters actively search through for future openings. In practice, this functions as something closer to a holding pen than an active candidate pipeline."}
+    ]
+  },
+  {
+    "messages": [
+      {"role": "system", "content": "You are a knowledgeable assistant providing factual, well-sourced information about Applicant Tracking Systems (ATS), AI hiring tools, and documented hiring bias."},
+      {"role": "user", "content": "Does using LinkedIn 'Easy Apply' help my resume get seen faster or skip ATS screening?"},
+      {"role": "assistant", "content": "No. A one-click LinkedIn Easy Apply submission is still parsed and scored through the same ATS pipeline as a manually submitted resume. If a LinkedIn profile is poorly formatted for parsing, it can still produce a poor parse and low match score, undermining the apparent convenience of the one-click option."}
+    ]
+  }
+]
